@@ -17,8 +17,6 @@ Wire Notes Line
 	11100 4250 4750 4250
 Wire Notes Line
 	11100 550  11100 4250
-Wire Notes Line
-	4700 4250 600  4250
 $Comp
 L power:+3.3V #PWR0123
 U 1 1 61335FEF
@@ -667,8 +665,6 @@ NoConn ~ 3200 6050
 Text Notes 1050 4650 0    50   ~ 10
 RA-02 LORA MODULE
 Wire Notes Line
-	600  4400 4700 4400
-Wire Notes Line
 	4700 4400 4700 7700
 Wire Notes Line
 	4700 7700 600  7700
@@ -743,4 +739,8 @@ Wire Notes Line
 	1150 2650 1200 2650
 Text GLabel 2000 5650 0    50   Input ~ 0
 RST
+Wire Notes Line
+	600  4400 4700 4400
+Wire Notes Line
+	4700 4250 600  4250
 $EndSCHEMATC
