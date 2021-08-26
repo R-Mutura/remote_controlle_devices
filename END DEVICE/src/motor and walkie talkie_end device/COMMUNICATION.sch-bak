@@ -1,0 +1,746 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	11100 4250 4750 4250
+Wire Notes Line
+	11100 550  11100 4250
+Wire Notes Line
+	4700 4250 600  4250
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 61335FEF
+P 2850 1550
+F 0 "#PWR0123" H 2850 1400 50  0001 C CNN
+F 1 "+3.3V" H 2865 1723 50  0000 C CNN
+F 2 "" H 2850 1550 50  0001 C CNN
+F 3 "" H 2850 1550 50  0001 C CNN
+	1    2850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1550 2850 1700
+Text GLabel 2050 2350 0    50   Input ~ 0
+PTT
+Wire Wire Line
+	2300 2350 2050 2350
+Text GLabel 2050 2550 0    50   Input ~ 0
+PD
+Wire Wire Line
+	2300 2550 2050 2550
+$Comp
+L power:GND #PWR0124
+U 1 1 61335FFA
+P 2800 3600
+F 0 "#PWR0124" H 2800 3350 50  0001 C CNN
+F 1 "GND" H 2805 3427 50  0000 C CNN
+F 2 "" H 2800 3600 50  0001 C CNN
+F 3 "" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1350 2050 1350 2200
+$Comp
+L Device:Microphone MK1
+U 1 1 61336001
+P 1900 3450
+F 0 "MK1" H 1770 3404 50  0000 R CNN
+F 1 "Microphone" H 1770 3495 50  0000 R CNN
+F 2 "" V 1900 3550 50  0001 C CNN
+F 3 "~" V 1900 3550 50  0001 C CNN
+	1    1900 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1900 3250 1900 3050
+Wire Wire Line
+	1900 3050 2300 3050
+$Comp
+L power:GND #PWR0125
+U 1 1 61336009
+P 1900 3800
+F 0 "#PWR0125" H 1900 3550 50  0001 C CNN
+F 1 "GND" H 1905 3627 50  0000 C CNN
+F 2 "" H 1900 3800 50  0001 C CNN
+F 3 "" H 1900 3800 50  0001 C CNN
+	1    1900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3800 1900 3650
+Wire Notes Line
+	1850 2650 1800 2650
+Wire Notes Line
+	1150 2500 1150 2650
+Text Notes 1200 2650 0    39   ~ 0
+Enable/disable sleep\nActive Low
+Wire Notes Line
+	1850 2650 1850 2450
+Wire Wire Line
+	3350 2200 3600 2200
+Text Label 3600 2200 0    50   ~ 0
+AUDIO_SIGNAL
+Wire Notes Line
+	1700 2050 1700 2200
+Text Notes 1350 2200 0    39   ~ 0
+9600BAUD,\nN,8,1.
+Wire Wire Line
+	2050 2200 2300 2200
+Text GLabel 2050 2200 0    50   Input ~ 0
+MCURX
+Wire Wire Line
+	2050 2100 2300 2100
+Text GLabel 2050 2100 0    50   Input ~ 0
+MCU_TX
+NoConn ~ 3350 2300
+NoConn ~ 2300 2450
+Wire Wire Line
+	2800 3450 2750 3450
+Connection ~ 2800 3450
+Wire Wire Line
+	2800 3450 2800 3600
+Wire Wire Line
+	2850 3450 2800 3450
+$Comp
+L Device:C C10
+U 1 1 61336022
+P 5050 1450
+F 0 "C10" H 5165 1496 50  0000 L CNN
+F 1 "10uF" H 5165 1405 50  0000 L CNN
+F 2 "" H 5088 1300 50  0001 C CNN
+F 3 "~" H 5050 1450 50  0001 C CNN
+	1    5050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 61336028
+P 5750 1500
+F 0 "C11" H 5865 1546 50  0000 L CNN
+F 1 "10nF" H 5865 1455 50  0000 L CNN
+F 2 "" H 5788 1350 50  0001 C CNN
+F 3 "~" H 5750 1500 50  0001 C CNN
+	1    5750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1300 5050 1250
+Wire Wire Line
+	5050 1250 5400 1250
+Connection ~ 5400 1250
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 61336031
+P 5400 1250
+F 0 "#PWR0126" H 5400 1100 50  0001 C CNN
+F 1 "+3.3V" H 5415 1423 50  0000 C CNN
+F 2 "" H 5400 1250 50  0001 C CNN
+F 3 "" H 5400 1250 50  0001 C CNN
+	1    5400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 61336037
+P 5400 1700
+F 0 "#PWR0127" H 5400 1450 50  0001 C CNN
+F 1 "GND" H 5405 1527 50  0000 C CNN
+F 2 "" H 5400 1700 50  0001 C CNN
+F 3 "" H 5400 1700 50  0001 C CNN
+	1    5400 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 1700
+Wire Wire Line
+	5400 1700 5750 1700
+Wire Wire Line
+	5050 1700 5400 1700
+Wire Wire Line
+	5750 1250 5750 1350
+Wire Wire Line
+	5750 1650 5750 1700
+Wire Wire Line
+	5400 1250 5750 1250
+Wire Wire Line
+	5050 1600 5050 1700
+Wire Wire Line
+	5600 2200 5850 2200
+Wire Wire Line
+	5600 2300 5850 2300
+Wire Wire Line
+	6650 2200 6950 2200
+Text Label 6950 2050 0    50   ~ 0
+AUDIO_SIGNAL
+$Comp
+L power:GND #PWR0128
+U 1 1 6133604C
+P 6250 2800
+F 0 "#PWR0128" H 6250 2550 50  0001 C CNN
+F 1 "GND" H 6255 2627 50  0000 C CNN
+F 2 "" H 6250 2800 50  0001 C CNN
+F 3 "" H 6250 2800 50  0001 C CNN
+	1    6250 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1900 6250 1550
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 61336053
+P 6250 1550
+F 0 "#PWR0129" H 6250 1400 50  0001 C CNN
+F 1 "+3.3V" H 6265 1723 50  0000 C CNN
+F 2 "" H 6250 1550 50  0001 C CNN
+F 3 "" H 6250 1550 50  0001 C CNN
+	1    6250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Potentiometer_Digital:MCP41010 U5
+U 1 1 61336059
+P 6250 2300
+F 0 "U5" H 6000 2750 50  0000 C CNN
+F 1 "MCP41010" H 5950 2650 50  0000 C CNN
+F 2 "" H 6250 2300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf" H 6250 2300 50  0001 C CNN
+	1    6250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2400 6750 2400
+Wire Wire Line
+	6750 2400 6750 2750
+Wire Wire Line
+	6750 2750 6250 2750
+Connection ~ 6250 2750
+Wire Wire Line
+	6250 2750 6250 2700
+Wire Wire Line
+	6250 2800 6250 2750
+$Comp
+L remote_devices:SA818-1W U3
+U 1 1 61336065
+P 2850 1800
+F 0 "U3" H 2550 1950 50  0000 C CNN
+F 1 "SA818-1W" H 2500 1850 50  0000 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "" H 2750 1800 50  0001 C CNN
+	1    2850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1300 1600 1400
+Wire Wire Line
+	1600 1000 1600 950 
+$Comp
+L Device:C C6
+U 1 1 6133606D
+P 1600 1150
+F 0 "C6" H 1715 1196 50  0000 L CNN
+F 1 "10nF" H 1715 1105 50  0000 L CNN
+F 2 "" H 1638 1000 50  0001 C CNN
+F 3 "~" H 1600 1150 50  0001 C CNN
+	1    1600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 61336073
+P 2000 1150
+F 0 "C7" H 2115 1196 50  0000 L CNN
+F 1 "100nF" H 2115 1105 50  0000 L CNN
+F 2 "" H 2038 1000 50  0001 C CNN
+F 3 "~" H 2000 1150 50  0001 C CNN
+	1    2000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 61336079
+P 2450 1150
+F 0 "C8" H 2565 1196 50  0000 L CNN
+F 1 "100nF" H 2565 1105 50  0000 L CNN
+F 2 "" H 2488 1000 50  0001 C CNN
+F 3 "~" H 2450 1150 50  0001 C CNN
+	1    2450 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 950  2000 950 
+Wire Wire Line
+	2000 950  2000 1000
+Connection ~ 2000 950 
+Wire Wire Line
+	2000 950  2450 950 
+Wire Wire Line
+	2450 950  2450 1000
+Wire Wire Line
+	1600 1400 2000 1400
+Wire Wire Line
+	2000 1400 2000 1300
+Connection ~ 2000 1400
+Wire Wire Line
+	2000 1400 2450 1400
+Wire Wire Line
+	2450 1400 2450 1300
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 61336089
+P 2000 950
+F 0 "#PWR0130" H 2000 800 50  0001 C CNN
+F 1 "+3.3V" H 2015 1123 50  0000 C CNN
+F 2 "" H 2000 950 50  0001 C CNN
+F 3 "" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 6133608F
+P 2000 1400
+F 0 "#PWR0131" H 2000 1150 50  0001 C CNN
+F 1 "GND" H 2005 1227 50  0000 C CNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "" H 2000 1400 50  0001 C CNN
+	1    2000 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 1500 0    39   ~ 0
+decaoupling caps
+$Comp
+L Device:C C12
+U 1 1 61336096
+P 7550 2450
+F 0 "C12" V 7298 2450 50  0000 C CNN
+F 1 "0.1uF" V 7389 2450 50  0000 C CNN
+F 2 "" H 7588 2300 50  0001 C CNN
+F 3 "~" H 7550 2450 50  0001 C CNN
+	1    7550 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R13
+U 1 1 6133609C
+P 8100 2450
+F 0 "R13" V 8000 2450 50  0000 C CNN
+F 1 "10k" V 8200 2450 50  0000 C CNN
+F 2 "" V 8140 2440 50  0001 C CNN
+F 3 "~" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 2450 7400 2450
+Wire Wire Line
+	7700 2450 7950 2450
+Wire Wire Line
+	8250 2450 8350 2450
+Connection ~ 8350 2450
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 613360A6
+P 10500 2300
+F 0 "J3" H 10450 2250 50  0000 R CNN
+F 1 "speaker_conn" H 10900 2450 50  0000 R CNN
+F 2 "" H 10500 2300 50  0001 C CNN
+F 3 "~" H 10500 2300 50  0001 C CNN
+	1    10500 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2300 10050 2300
+Connection ~ 10050 2300
+Wire Wire Line
+	10050 2300 10050 3300
+Wire Wire Line
+	10050 3300 9400 3300
+Wire Wire Line
+	8350 3300 8350 2450
+$Comp
+L Device:R_US R14
+U 1 1 613360B1
+P 9250 3300
+F 0 "R14" V 9200 3150 50  0000 C CNN
+F 1 "47k" V 9200 3450 50  0000 C CNN
+F 2 "" V 9290 3290 50  0001 C CNN
+F 3 "~" H 9250 3300 50  0001 C CNN
+	1    9250 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 3300 8350 3300
+Text Notes 10150 2650 0    50   ~ 0
+connect a 4 ohm \n      speaker
+$Comp
+L power:+5V #PWR0132
+U 1 1 613360BA
+P 9150 1350
+F 0 "#PWR0132" H 9150 1200 50  0001 C CNN
+F 1 "+5V" H 9165 1523 50  0000 C CNN
+F 2 "" H 9150 1350 50  0001 C CNN
+F 3 "" H 9150 1350 50  0001 C CNN
+	1    9150 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9150 1400
+Wire Wire Line
+	9150 1400 9150 1350
+Wire Wire Line
+	9150 1600 9150 1400
+Wire Wire Line
+	9800 2400 10300 2400
+Wire Wire Line
+	10050 2300 9800 2300
+Wire Wire Line
+	8350 2450 8550 2450
+$Comp
+L Device:CP1_Small C14
+U 1 1 613360C6
+P 9950 1550
+F 0 "C14" H 10041 1596 50  0000 L CNN
+F 1 "1.0uF" H 10041 1505 50  0000 L CNN
+F 2 "" H 9950 1550 50  0001 C CNN
+F 3 "~" H 9950 1550 50  0001 C CNN
+	1    9950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L remote_devices:LM4871 IC1
+U 1 1 613360D2
+P 8750 1800
+F 0 "IC1" H 8800 1950 50  0000 C CNN
+F 1 "LM4871" H 8800 1850 50  0000 C CNN
+F 2 "SOP65P490X110-8N" H 10200 1300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/LM4871" H 10200 1200 50  0001 L CNN
+F 4 "Boomer Series: 3W Audio Amplifier with Shutdown Mode" H 10200 1100 50  0001 L CNN "Description"
+F 5 "1.1" V 9150 1850 50  0001 L CNN "Height"
+F 6 "926-LM4871MMX/NOPB" H 9650 1300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM4871MMX-NOPB?qs=QbsRYf82W3E5ZV%2FZfPWeGA%3D%3D" H 10200 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 10200 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "LM4871MMX/NOPB" H 10200 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1400 9950 1450
+Connection ~ 9950 1400
+Wire Wire Line
+	9150 1400 9950 1400
+Wire Wire Line
+	9950 1400 10400 1400
+$Comp
+L power:GND #PWR0133
+U 1 1 613360DC
+P 9200 2850
+F 0 "#PWR0133" H 9200 2600 50  0001 C CNN
+F 1 "GND" H 9205 2677 50  0000 C CNN
+F 2 "" H 9200 2850 50  0001 C CNN
+F 3 "" H 9200 2850 50  0001 C CNN
+	1    9200 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 613360E2
+P 10100 1750
+F 0 "#PWR0134" H 10100 1500 50  0001 C CNN
+F 1 "GND" H 10105 1577 50  0000 C CNN
+F 2 "" H 10100 1750 50  0001 C CNN
+F 3 "" H 10100 1750 50  0001 C CNN
+	1    10100 1750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 10100 1750
+Wire Wire Line
+	10400 1750 10100 1750
+Wire Wire Line
+	10100 1750 9950 1750
+$Comp
+L Device:CP1_Small C13
+U 1 1 613360EB
+P 8000 1650
+F 0 "C13" H 8091 1696 50  0000 L CNN
+F 1 "1.0uF" H 8091 1605 50  0000 L CNN
+F 2 "" H 8000 1650 50  0001 C CNN
+F 3 "~" H 8000 1650 50  0001 C CNN
+	1    8000 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 613360F1
+P 7900 1650
+F 0 "#PWR0135" H 7900 1400 50  0001 C CNN
+F 1 "GND" H 7905 1477 50  0000 C CNN
+F 2 "" H 7900 1650 50  0001 C CNN
+F 3 "" H 7900 1650 50  0001 C CNN
+	1    7900 1650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8550 2350 8450 2350
+Wire Wire Line
+	8450 2350 8450 2150
+Connection ~ 8450 2150
+Wire Wire Line
+	8450 2150 8550 2150
+Wire Wire Line
+	8450 2150 8150 2150
+Text GLabel 8300 1850 1    50   Input ~ 0
+LM_SD
+Wire Wire Line
+	8150 2150 8150 1650
+Wire Wire Line
+	8150 1650 8100 1650
+$Comp
+L Device:CP1_Small C15
+U 1 1 613360FF
+P 10400 1550
+F 0 "C15" H 10491 1596 50  0000 L CNN
+F 1 "10nF" H 10491 1505 50  0000 L CNN
+F 2 "" H 10400 1550 50  0001 C CNN
+F 3 "~" H 10400 1550 50  0001 C CNN
+	1    10400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1650 10400 1750
+Wire Wire Line
+	9950 1750 9950 1650
+Wire Wire Line
+	10400 1400 10400 1450
+Text Notes 5600 900  0    50   ~ 10
+DIGITAL POTENTIOMETER
+Text Notes 8650 900  0    50   ~ 10
+AUDIO AMPLIFIER
+Text Notes 700  850  0    50   ~ 10
+SA818 FSH MODULE
+Wire Notes Line
+	600  550  4700 550 
+Wire Notes Line
+	4700 550  4700 4250
+Wire Notes Line
+	600  4250 600  550 
+Wire Wire Line
+	6650 2300 7050 2300
+Wire Wire Line
+	7050 2300 7050 2450
+Wire Wire Line
+	6950 2200 6950 2050
+Wire Notes Line
+	4750 4250 4750 550 
+Wire Notes Line
+	4750 550  11100 550 
+Wire Wire Line
+	8550 2050 8300 2050
+Wire Wire Line
+	8300 2050 8300 1850
+Text GLabel 2000 6150 0    50   Input ~ 0
+MOSI
+Text GLabel 2000 6050 0    50   Input ~ 0
+MISO
+Text GLabel 2000 5950 0    50   Input ~ 0
+SCK
+$Comp
+L power:+3.3V #PWR0136
+U 1 1 614532C2
+P 2700 4950
+F 0 "#PWR0136" H 2700 4800 50  0001 C CNN
+F 1 "+3.3V" H 2715 5123 50  0000 C CNN
+F 2 "" H 2700 4950 50  0001 C CNN
+F 3 "" H 2700 4950 50  0001 C CNN
+	1    2700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6150 2000 6150
+Wire Wire Line
+	2000 6050 2200 6050
+Wire Wire Line
+	2200 5950 2000 5950
+Wire Wire Line
+	2000 5850 2200 5850
+Wire Wire Line
+	2200 5650 2000 5650
+$Comp
+L Device:C_Small C?
+U 1 1 614532CD
+P 3600 5050
+AR Path="/614532CD" Ref="C?"  Part="1" 
+AR Path="/6131B829/614532CD" Ref="C9"  Part="1" 
+F 0 "C9" V 3829 5050 50  0000 C CNN
+F 1 "100nF" V 3738 5050 50  0000 C CNN
+F 2 "" H 3600 5050 50  0001 C CNN
+F 3 "~" H 3600 5050 50  0001 C CNN
+	1    3600 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L remote_devices:Ai-Thinker-Ra-02 U?
+U 1 1 614532D3
+P 2700 5950
+AR Path="/614532D3" Ref="U?"  Part="1" 
+AR Path="/6131B829/614532D3" Ref="U2"  Part="1" 
+F 0 "U2" H 2250 6700 50  0000 C CNN
+F 1 "Ai-Thinker-Ra-02" H 2250 6600 50  0000 C CNN
+F 2 "Remote_devices:Ai-Thinker-Ra-02-LoRa" H 3700 5550 50  0001 C CNN
+F 3 "https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE-RA-01" H 2800 6650 50  0001 C CNN
+	1    2700 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4900 3600 4950
+$Comp
+L power:GND #PWR0137
+U 1 1 614532DA
+P 3600 5200
+F 0 "#PWR0137" H 3600 4950 50  0001 C CNN
+F 1 "GND" H 3605 5027 50  0000 C CNN
+F 2 "" H 3600 5200 50  0001 C CNN
+F 3 "" H 3600 5200 50  0001 C CNN
+	1    3600 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 614532E0
+P 2700 6800
+F 0 "#PWR0138" H 2700 6550 50  0001 C CNN
+F 1 "GND" H 2705 6627 50  0000 C CNN
+F 2 "" H 2700 6800 50  0001 C CNN
+F 3 "" H 2700 6800 50  0001 C CNN
+	1    2700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6800 2700 6750
+Wire Wire Line
+	2600 6650 2600 6750
+Wire Wire Line
+	2600 6750 2700 6750
+Wire Wire Line
+	2800 6650 2800 6750
+Wire Wire Line
+	2800 6750 2700 6750
+Connection ~ 2700 6750
+Text GLabel 3400 5550 2    50   Input ~ 0
+DIO0
+Wire Wire Line
+	2700 4950 2700 5050
+Wire Wire Line
+	3600 5200 3600 5150
+Wire Wire Line
+	3600 4900 3100 4900
+Wire Wire Line
+	3100 4900 3100 5050
+Wire Wire Line
+	3100 5050 2700 5050
+Connection ~ 2700 5050
+Wire Wire Line
+	2700 5050 2700 5150
+Text GLabel 3400 5650 2    50   Input ~ 0
+DIO1
+Text GLabel 3400 5750 2    50   Input ~ 0
+DIO2
+Wire Wire Line
+	3200 5550 3400 5550
+Wire Wire Line
+	3400 5650 3200 5650
+Wire Wire Line
+	3200 5750 3400 5750
+NoConn ~ 3200 5850
+NoConn ~ 3200 5950
+NoConn ~ 3200 6050
+Text Notes 1050 4650 0    50   ~ 10
+RA-02 LORA MODULE
+Wire Notes Line
+	600  4400 4700 4400
+Wire Notes Line
+	4700 4400 4700 7700
+Wire Notes Line
+	4700 7700 600  7700
+Wire Notes Line
+	600  7700 600  4400
+Wire Notes Line
+	10850 2500 10850 2750
+Wire Notes Line
+	10100 2500 10100 2700
+Text Notes 6150 3300 0    50   ~ 0
+Digital Potentiometer uses \nSPI protocol to change resistance\nused for setting the volume of the speaker
+Text GLabel 2000 5850 0    50   Input ~ 0
+lora_SS
+Text GLabel 5600 2300 0    50   Input ~ 0
+MOSI
+Text GLabel 5600 2200 0    50   Input ~ 0
+SCK
+Text GLabel 5600 2400 0    50   Input ~ 0
+pot_CS
+Wire Wire Line
+	5600 2400 5850 2400
+$Comp
+L remote_devices:LP_Filter U4
+U 1 1 61620D56
+P 4400 1350
+F 0 "U4" V 4900 1000 50  0000 L CNN
+F 1 "LP_Filter" V 4800 850 50  0000 L CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "" H 4400 1350 50  0001 C CNN
+F 4 " 500MHz Lowpass Filter, 50ohm Impedance,1206" V 4400 1350 50  0001 C CNN "Description"
+	1    4400 1350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Antenna AE1
+U 1 1 616228CF
+P 4300 700
+F 0 "AE1" H 4380 689 50  0000 L CNN
+F 1 "Antenna" H 4380 598 50  0000 L CNN
+F 2 "" H 4300 700 50  0001 C CNN
+F 3 "~" H 4300 700 50  0001 C CNN
+	1    4300 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1900 4300 1900
+Wire Wire Line
+	4300 1900 4300 1850
+$Comp
+L power:GND #PWR0139
+U 1 1 616340D2
+P 3800 1350
+F 0 "#PWR0139" H 3800 1100 50  0001 C CNN
+F 1 "GND" H 3805 1177 50  0000 C CNN
+F 2 "" H 3800 1350 50  0001 C CNN
+F 3 "" H 3800 1350 50  0001 C CNN
+	1    3800 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 1250 3800 1250
+Wire Wire Line
+	3800 1250 3800 1350
+Wire Wire Line
+	3950 1450 3800 1450
+Connection ~ 3800 1350
+Wire Wire Line
+	3800 1350 3800 1450
+Text Notes 3550 1700 0    39   Italic 0
+500-556MHz LP\nwith 50 ohm \nimpedance
+Wire Notes Line
+	1150 2650 1200 2650
+Text GLabel 2000 5650 0    50   Input ~ 0
+RST
+$EndSCHEMATC

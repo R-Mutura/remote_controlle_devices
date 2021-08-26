@@ -1,0 +1,29 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADP3333ARMZ-5-R7
+D LDO Regulator 5V 0.6A 8-Pin MSOP
+$ENDCMP
+#
+$CMP Ai-Thinker-Ra-02
+D Ai-Thinker LoRa Module Ra-01
+K Ra-01 LoRa
+F https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE-RA-01
+$ENDCMP
+#
+$CMP DMP6185SE
+D -12A Id, -30V Vds, P-Channel Power MOSFET, 9.5mOhm Ron, 33.7nC Qg (typ), PowerDI3333-8
+K P-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMP3013SFV.pdf
+$ENDCMP
+#
+$CMP LM4871
+D Boomer Series: 3W Audio Amplifier with Shutdown Mode
+F http://www.ti.com/lit/gpn/LM4871
+$ENDCMP
+#
+$CMP TPS55340RTER
+D TEXAS INSTRUMENTS - TPS55340RTER - DC/DC CONV, BOOST/SEPIC/FLYBACK, WQFN-16
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS55340&&fileType=pdf
+$ENDCMP
+#
+#End Doc Library
