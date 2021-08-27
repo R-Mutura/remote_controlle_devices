@@ -1375,7 +1375,7 @@ Wire Wire Line
 Text Label 1600 4150 0    39   Italic 0
 ISET2
 Text Notes 1050 4550 0    39   Italic 0
-max fast charge currentt=2.5A
+TERMINATION CURRENT SETPOINT
 Text Label 3450 2900 2    39   Italic 0
 ACSET
 Wire Wire Line
@@ -1400,7 +1400,7 @@ $EndComp
 Wire Wire Line
 	4800 850  4800 700 
 Text Notes 700  1700 0    39   Italic 0
-Power in= 12V/ 18V(3A)
+Power in= 12V/ 18V(>3A)
 $Comp
 L Device:R_US R20
 U 1 1 61A0FBDC

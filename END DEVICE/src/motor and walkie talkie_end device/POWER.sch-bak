@@ -1400,7 +1400,7 @@ $EndComp
 Wire Wire Line
 	4800 850  4800 700 
 Text Notes 700  1700 0    39   Italic 0
-Power in= 12V/ 18V(3A)
+Power in= 12V/ 18V(>3A)
 $Comp
 L Device:R_US R20
 U 1 1 61A0FBDC
