@@ -591,27 +591,16 @@ L remote_devices:Ai-Thinker-Ra-02 U?
 U 1 1 614532D3
 P 4500 5950
 AR Path="/614532D3" Ref="U?"  Part="1" 
-AR Path="/6131B829/614532D3" Ref="U2"  Part="1" 
-F 0 "U2" H 4050 6700 50  0000 C CNN
+AR Path="/6131B829/614532D3" Ref="U"  Part="1" 
+F 0 "U" H 4050 6700 50  0000 C CNN
 F 1 "Ai-Thinker-Ra-02" H 4050 6600 50  0000 C CNN
-F 2 "Remote_devices:Ai-Thinker-Ra-02-LoRa" H 5500 5550 50  0001 C CNN
+F 2 "RF_Module:Ai-Thinker-Ra-01-LoRa" H 5500 5550 50  0001 C CNN
 F 3 "https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE-RA-01" H 4600 6650 50  0001 C CNN
 	1    4500 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5400 4900 5400 4950
-$Comp
-L power:GND #PWR0137
-U 1 1 614532DA
-P 5400 5200
-F 0 "#PWR0137" H 5400 4950 50  0001 C CNN
-F 1 "GND" H 5405 5027 50  0000 C CNN
-F 2 "" H 5400 5200 50  0001 C CNN
-F 3 "" H 5400 5200 50  0001 C CNN
-	1    5400 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0138
 U 1 1 614532E0
@@ -625,8 +614,6 @@ F 3 "" H 4500 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 6800 4500 6750
-Wire Wire Line
-	4400 6650 4400 6750
 Wire Wire Line
 	4400 6750 4500 6750
 Wire Wire Line
@@ -743,4 +730,17 @@ Wire Notes Line
 	2400 4400 6500 4400
 Wire Notes Line
 	4700 4250 600  4250
+$Comp
+L power:GND #PWR0137
+U 1 1 62395891
+P 5400 5200
+F 0 "#PWR0137" H 5400 4950 50  0001 C CNN
+F 1 "GND" H 5405 5027 50  0000 C CNN
+F 2 "" H 5400 5200 50  0001 C CNN
+F 3 "" H 5400 5200 50  0001 C CNN
+	1    5400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6650 4400 6750
 $EndSCHEMATC

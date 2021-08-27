@@ -771,8 +771,6 @@ F 3 "" H 9650 1750 50  0001 C CNN
 	1    9650 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 1750 9650 1800
 $Comp
 L Device:R_US R44
 U 1 1 62046E86
@@ -863,26 +861,10 @@ BATTERY MONITORING CIRCUIT
 Text Notes 10200 3800 0    50   Italic 0
 ON=BATTERY LOW\n(<10.5V)
 $Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 6221AB86
-P 9600 1800
-F 0 "#FLG0104" H 9600 1875 50  0001 C CNN
-F 1 "PWR_FLAG" V 9600 1927 50  0000 L CNN
-F 2 "" H 9600 1800 50  0001 C CNN
-F 3 "~" H 9600 1800 50  0001 C CNN
-	1    9600 1800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9600 1800 9650 1800
-Connection ~ 9650 1800
-Wire Wire Line
-	9650 1800 9650 1900
-$Comp
-L remote_devices:L4931ABDT50 U?
+L remote_devices:L4931ABDT50 U9
 U 1 1 62291361
 P 2700 5550
-F 0 "U?" H 2700 5800 50  0000 C CNN
+F 0 "U9" H 2700 5800 50  0000 C CNN
 F 1 "L4931ABDT50" H 2650 5700 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 2700 5701 50  0001 C CIN
 F 3 "" H 2700 5500 50  0001 C CNN
@@ -910,10 +892,10 @@ Connection ~ 3100 5550
 Wire Wire Line
 	3100 5800 3100 5900
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C50
 U 1 1 622D1115
 P 4100 5750
-F 0 "C?" H 4191 5796 50  0000 L CNN
+F 0 "C50" H 4191 5796 50  0000 L CNN
 F 1 "10uF" H 4191 5705 50  0000 L CNN
 F 2 "" H 4100 5750 50  0001 C CNN
 F 3 "~" H 4100 5750 50  0001 C CNN
@@ -946,4 +928,21 @@ Wire Wire Line
 	3100 5900 3750 5900
 Text Notes 1350 7250 0    79   ~ 0
 NB// All components can work when power is pluggedin except the\n         DC-Motor. The motor only works when the battery is connected
+Wire Wire Line
+	9650 1750 9650 1900
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62357D8E
+P 1700 5300
+AR Path="/615FCEB9/62357D8E" Ref="#FLG?"  Part="1" 
+AR Path="/61DF39DA/62357D8E" Ref="#FLG0104"  Part="1" 
+F 0 "#FLG0104" H 1700 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 5473 50  0000 C CNN
+F 2 "" H 1700 5300 50  0001 C CNN
+F 3 "~" H 1700 5300 50  0001 C CNN
+	1    1700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5300 1700 5550
 $EndSCHEMATC

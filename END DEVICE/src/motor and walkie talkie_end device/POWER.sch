@@ -1125,22 +1125,6 @@ F 3 "~" H 3350 2250 50  0001 C CNN
 	1    3350 2250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3100 2250 3250 2250
-$Comp
-L power:GND #PWR?
-U 1 1 6185AE66
-P 3100 2250
-AR Path="/6185AE66" Ref="#PWR?"  Part="1" 
-AR Path="/615FCEB9/6185AE66" Ref="#PWR0154"  Part="1" 
-AR Path="/61DE992E/6185AE66" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0154" H 3100 2000 50  0001 C CNN
-F 1 "GND" H 3105 2077 50  0000 C CNN
-F 2 "" H 3100 2250 50  0001 C CNN
-F 3 "" H 3100 2250 50  0001 C CNN
-	1    3100 2250
-	0    1    1    0   
-$EndComp
 Connection ~ 3450 2250
 Wire Wire Line
 	3450 2250 3450 2300
@@ -1397,8 +1381,6 @@ F 3 "~" H 4800 1000 50  0001 C CNN
 	1    4800 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 850  4800 700 
 Text Notes 700  1700 0    39   Italic 0
 Power in= 12V/ 18V(>3A)
 $Comp
@@ -1849,4 +1831,23 @@ Wire Wire Line
 	1950 700  4800 700 
 Text GLabel 9150 1300 2    50   Input ~ 10
 TO_SYS
+Wire Wire Line
+	4800 700  4800 850 
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 62374A60
+P 4800 1400
+F 0 "#FLG0105" H 4800 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 1600 50  0000 L CNN
+F 2 "" H 4800 1400 50  0001 C CNN
+F 3 "~" H 4800 1400 50  0001 C CNN
+	1    4800 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 2250 2400 1950
+Wire Wire Line
+	2400 1950 1850 1950
+Wire Wire Line
+	2400 2250 3250 2250
 $EndSCHEMATC
