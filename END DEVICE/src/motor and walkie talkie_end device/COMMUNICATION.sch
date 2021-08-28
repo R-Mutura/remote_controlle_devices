@@ -822,12 +822,12 @@ Wire Wire Line
 Wire Wire Line
 	4050 1900 3350 1900
 $Comp
-L remote_devices:LP_Filter U?
+L remote_devices:LP_Filter U4
 U 1 1 627B3A36
 P 4150 1400
-F 0 "U?" V 4079 1428 50  0000 L CNN
+F 0 "U4" V 4079 1428 50  0000 L CNN
 F 1 "LP_Filter" V 4170 1428 50  0000 L CNN
-F 2 "" H 4150 1400 50  0001 C CNN
+F 2 "Remote_devices:LFCN-530" H 4150 1400 50  0001 C CNN
 F 3 "" H 4150 1400 50  0001 C CNN
 	1    4150 1400
 	0    1    1    0   

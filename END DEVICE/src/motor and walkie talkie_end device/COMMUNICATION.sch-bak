@@ -654,24 +654,22 @@ $EndComp
 $Comp
 L power:GND #PWR0139
 U 1 1 616340D2
-P 4450 1400
-F 0 "#PWR0139" H 4450 1150 50  0001 C CNN
-F 1 "GND" H 4455 1227 50  0000 C CNN
-F 2 "" H 4450 1400 50  0001 C CNN
-F 3 "" H 4450 1400 50  0001 C CNN
-	1    4450 1400
-	0    -1   -1   0   
+P 3650 1350
+F 0 "#PWR0139" H 3650 1100 50  0001 C CNN
+F 1 "GND" H 3655 1177 50  0000 C CNN
+F 2 "" H 3650 1350 50  0001 C CNN
+F 3 "" H 3650 1350 50  0001 C CNN
+	1    3650 1350
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 1500 4450 1500
+	3700 1250 3650 1250
 Wire Wire Line
-	4450 1500 4450 1400
+	3650 1250 3650 1350
 Wire Wire Line
 	4400 1300 4450 1300
-Connection ~ 4450 1400
-Wire Wire Line
-	4450 1400 4450 1300
-Text Notes 3939 1200 3    39   Italic 0
+Connection ~ 3650 1350
+Text Notes 4350 1600 3    39   Italic 0
 500-556MHz LP\nwith 50 ohm \nimpedance
 Wire Notes Line
 	1150 2650 1200 2650
@@ -819,20 +817,23 @@ Wire Wire Line
 Wire Wire Line
 	4550 6750 4650 6750
 Connection ~ 4650 6750
-$Comp
-L remote_devices:LP_Filter U4
-U 1 1 61620D56
-P 3950 1400
-F 0 "U4" V 4450 1050 50  0000 L CNN
-F 1 "LP_Filter" V 4350 900 50  0000 L CNN
-F 2 "Remote_devices:LFCN-530" H 3950 1400 50  0001 C CNN
-F 3 "https://eu.mouser.com/ProductDetail/Mini-Circuits/LFCN-530%2b?qs=xZ%2FP%252Ba9zWqafnyLLcDkgmw%3D%3D" H 3950 1400 50  0001 C CNN
-F 4 " 500MHz Lowpass Filter, 50ohm Impedance,1206" V 3950 1400 50  0001 C CNN "Description"
-	1    3950 1400
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	4050 1850 4050 1900
 Wire Wire Line
 	4050 1900 3350 1900
+$Comp
+L remote_devices:LP_Filter U4
+U 1 1 627B3A36
+P 4150 1400
+F 0 "U4" V 4079 1428 50  0000 L CNN
+F 1 "LP_Filter" V 4170 1428 50  0000 L CNN
+F 2 "Remote_devices:LFCN-530" H 4150 1400 50  0001 C CNN
+F 3 "" H 4150 1400 50  0001 C CNN
+	1    4150 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1500 3650 1500
+Wire Wire Line
+	3650 1350 3650 1500
 $EndSCHEMATC

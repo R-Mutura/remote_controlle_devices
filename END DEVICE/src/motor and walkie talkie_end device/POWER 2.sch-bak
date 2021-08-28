@@ -343,8 +343,6 @@ Wire Wire Line
 	6900 3600 7700 3600
 Text GLabel 7950 1100 2    39   Input Italic 0
 18V
-Wire Wire Line
-	7950 1100 7700 1100
 Text Notes 650  700  0    50   ~ 10
 11.1V to 18V boost circuit\n
 Connection ~ 7700 1100
@@ -683,8 +681,6 @@ Wire Notes Line
 Wire Notes Line
 	8300 550  8300 4650
 Wire Wire Line
-	7650 2150 7700 2150
-Wire Wire Line
 	5800 2150 7700 2150
 $Comp
 L Device:R_US R44
@@ -863,4 +859,39 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 6400 5400 50  0001 C CNN
 	1    6400 5400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6290EE9D
+P 8100 1500
+F 0 "#PWR0111" H 8100 1250 50  0001 C CNN
+F 1 "GND" H 8105 1327 50  0000 C CNN
+F 2 "" H 8100 1500 50  0001 C CNN
+F 3 "" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1400 7900 1450
+Wire Wire Line
+	7900 1450 8100 1450
+Wire Wire Line
+	8100 1450 8100 1500
+$Comp
+L Device:C_Small C5
+U 1 1 62905119
+P 7900 1300
+F 0 "C5" H 7992 1346 50  0000 L CNN
+F 1 "10uF" H 7992 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 1300 50  0001 C CNN
+F 3 "~" H 7900 1300 50  0001 C CNN
+	1    7900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1100 7900 1100
+Wire Wire Line
+	7900 1200 7900 1100
+Connection ~ 7900 1100
+Wire Wire Line
+	7900 1100 7700 1100
 $EndSCHEMATC
