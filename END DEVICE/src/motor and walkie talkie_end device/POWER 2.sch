@@ -377,8 +377,6 @@ Wire Wire Line
 Connection ~ 3000 1100
 Wire Wire Line
 	3000 1100 3450 1100
-Wire Wire Line
-	1450 1100 1700 1100
 $Comp
 L Device:C_Small C38
 U 1 1 61F84AA2
@@ -745,7 +743,7 @@ F 3 "~" H 7700 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 900  7700 1100
-NoConn ~ 1450 1300
+NoConn ~ 1450 1100
 Wire Notes Line
 	8350 950  11100 950 
 Wire Notes Line
@@ -894,4 +892,70 @@ Wire Wire Line
 Connection ~ 7900 1100
 Wire Wire Line
 	7900 1100 7700 1100
+$Comp
+L Device:R_US R?
+U 1 1 61329130
+P 5650 6300
+AR Path="/615FCEB9/61329130" Ref="R?"  Part="1" 
+AR Path="/61DE992E/61329130" Ref="R?"  Part="1" 
+AR Path="/61DF39DA/61329130" Ref="R1"  Part="1" 
+F 0 "R1" V 5445 6300 50  0000 C CNN
+F 1 "10k" V 5536 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5690 6290 50  0001 C CNN
+F 3 "~" H 5650 6300 50  0001 C CNN
+	1    5650 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61329138
+P 6050 6300
+AR Path="/615FCEB9/61329138" Ref="D?"  Part="1" 
+AR Path="/61DE992E/61329138" Ref="D?"  Part="1" 
+AR Path="/61DF39DA/61329138" Ref="D3"  Part="1" 
+F 0 "D3" H 6043 6045 50  0000 C CNN
+F 1 "LED" H 6043 6136 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6050 6300 50  0001 C CNN
+F 3 "~" H 6050 6300 50  0001 C CNN
+	1    6050 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 6300 5800 6300
+Text Notes 6700 6300 0    39   Italic 0
+SYSTEM_ON
+$Comp
+L power:GND #PWR04
+U 1 1 61338120
+P 6600 6300
+F 0 "#PWR04" H 6600 6050 50  0001 C CNN
+F 1 "GND" H 6605 6127 50  0000 C CNN
+F 2 "" H 6600 6300 50  0001 C CNN
+F 3 "" H 6600 6300 50  0001 C CNN
+	1    6600 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6300 6600 6300
+$Comp
+L power:+3.3V #PWR03
+U 1 1 61347035
+P 5300 6150
+F 0 "#PWR03" H 5300 6000 50  0001 C CNN
+F 1 "+3.3V" H 5315 6323 50  0000 C CNN
+F 2 "" H 5300 6150 50  0001 C CNN
+F 3 "" H 5300 6150 50  0001 C CNN
+	1    5300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6150 5300 6300
+Wire Wire Line
+	5300 6300 5500 6300
+Wire Wire Line
+	1700 1100 1550 1100
+Wire Wire Line
+	1550 1100 1550 1300
+Wire Wire Line
+	1550 1300 1450 1300
 $EndSCHEMATC

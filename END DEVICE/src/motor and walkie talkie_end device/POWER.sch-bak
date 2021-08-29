@@ -490,49 +490,49 @@ Text Notes 5650 2450 0    39   Italic 0
 short trace
 Text Label 3500 2300 0    39   Italic 0
 vref
-Text Label 2350 4850 0    39   Italic 0
+Text Label 2300 4000 0    39   Italic 0
 vref
 $Comp
 L Device:R_US R28
 U 1 1 617905B6
-P 2550 5100
+P 2500 4250
 AR Path="/615FCEB9/617905B6" Ref="R28"  Part="1" 
 AR Path="/61DE992E/617905B6" Ref="R?"  Part="1" 
-F 0 "R28" V 2345 5100 50  0000 C CNN
-F 1 "10k" V 2436 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2590 5090 50  0001 C CNN
-F 3 "~" H 2550 5100 50  0001 C CNN
-	1    2550 5100
+F 0 "R28" V 2295 4250 50  0000 C CNN
+F 1 "10k" V 2386 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2540 4240 50  0001 C CNN
+F 3 "~" H 2500 4250 50  0001 C CNN
+	1    2500 4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2350 4850 2350 5100
+	2300 4000 2300 4250
 Wire Wire Line
-	2350 5100 2400 5100
+	2300 4250 2350 4250
 $Comp
 L Device:LED D7
 U 1 1 61799560
-P 2950 5100
+P 2900 4250
 AR Path="/615FCEB9/61799560" Ref="D7"  Part="1" 
 AR Path="/61DE992E/61799560" Ref="D?"  Part="1" 
-F 0 "D7" H 2943 4845 50  0000 C CNN
-F 1 "LED" H 2943 4936 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2950 5100 50  0001 C CNN
-F 3 "~" H 2950 5100 50  0001 C CNN
-	1    2950 5100
+F 0 "D7" H 2893 3995 50  0000 C CNN
+F 1 "LED" H 2893 4086 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2900 4250 50  0001 C CNN
+F 3 "~" H 2900 4250 50  0001 C CNN
+	1    2900 4250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3350 5100 3100 5100
+	3300 4250 3050 4250
 Wire Wire Line
-	2800 5100 2700 5100
-Text Notes 2600 5200 0    39   Italic 0
+	2750 4250 2650 4250
+Text Notes 2550 4350 0    39   Italic 0
 power good indicator
 Text Label 3500 3400 2    39   Italic 0
 ~PG
 Wire Wire Line
 	3700 3400 3500 3400
-Text Label 3350 5100 0    39   Italic 0
+Text Label 3300 4250 0    39   Italic 0
 ~PG
 $Comp
 L Device:C_Small C27
@@ -611,86 +611,6 @@ Wire Wire Line
 Connection ~ 7600 3050
 Wire Wire Line
 	7600 3050 7600 2550
-Text Label 2300 4250 0    39   Italic 0
-vref
-$Comp
-L Device:R_US R27
-U 1 1 617F4055
-P 2500 4500
-AR Path="/615FCEB9/617F4055" Ref="R27"  Part="1" 
-AR Path="/61DE992E/617F4055" Ref="R?"  Part="1" 
-F 0 "R27" V 2295 4500 50  0000 C CNN
-F 1 "10k" V 2386 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2540 4490 50  0001 C CNN
-F 3 "~" H 2500 4500 50  0001 C CNN
-	1    2500 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 4250 2300 4500
-Wire Wire Line
-	2300 4500 2350 4500
-$Comp
-L Device:LED D6
-U 1 1 617F4061
-P 2900 4500
-AR Path="/615FCEB9/617F4061" Ref="D6"  Part="1" 
-AR Path="/61DE992E/617F4061" Ref="D?"  Part="1" 
-F 0 "D6" H 2893 4245 50  0000 C CNN
-F 1 "LED" H 2893 4336 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2900 4500 50  0001 C CNN
-F 3 "~" H 2900 4500 50  0001 C CNN
-	1    2900 4500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 4500 3050 4500
-Wire Wire Line
-	2750 4500 2650 4500
-Text Label 3300 4500 0    39   Italic 0
-STAT2
-Text Label 2300 3850 0    39   Italic 0
-vref
-$Comp
-L Device:R_US R26
-U 1 1 617FAE61
-P 2500 4100
-AR Path="/615FCEB9/617FAE61" Ref="R26"  Part="1" 
-AR Path="/61DE992E/617FAE61" Ref="R?"  Part="1" 
-F 0 "R26" V 2295 4100 50  0000 C CNN
-F 1 "10k" V 2386 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2540 4090 50  0001 C CNN
-F 3 "~" H 2500 4100 50  0001 C CNN
-	1    2500 4100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 3850 2300 4100
-Wire Wire Line
-	2300 4100 2350 4100
-$Comp
-L Device:LED D5
-U 1 1 617FAE6D
-P 2900 4100
-AR Path="/615FCEB9/617FAE6D" Ref="D5"  Part="1" 
-AR Path="/61DE992E/617FAE6D" Ref="D?"  Part="1" 
-F 0 "D5" H 2893 3845 50  0000 C CNN
-F 1 "LED" H 2893 3936 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2900 4100 50  0001 C CNN
-F 3 "~" H 2900 4100 50  0001 C CNN
-	1    2900 4100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 4100 3050 4100
-Wire Wire Line
-	2750 4100 2650 4100
-Text Label 3300 4100 0    39   Italic 0
-STAT1
-Text Notes 3050 4200 0    39   Italic 0
-charge in progress
-Text Notes 3050 4600 0    39   Italic 0
-charge complete
 $Comp
 L Device:C_Small C23
 U 1 1 61835D75
@@ -1320,10 +1240,6 @@ Wire Wire Line
 	10150 2550 10250 2550
 Text Notes 750  750  0    50   ~ 10
 LIPO CHARGING CIRCUIT
-Text Label 3500 3250 2    39   Italic 0
-STAT2
-Text Label 3500 3100 2    39   Italic 0
-STAT1
 Wire Wire Line
 	3700 3100 3500 3100
 Wire Wire Line
@@ -1503,4 +1419,6 @@ F 3 "~" H 4800 6950 50  0001 C CNN
 	1    4800 6950
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3500 3100
+NoConn ~ 3500 3250
 $EndSCHEMATC
