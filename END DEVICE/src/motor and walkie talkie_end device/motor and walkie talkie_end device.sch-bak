@@ -449,10 +449,6 @@ Text GLabel 4500 4450 2    50   Input ~ 0
 MCU_TX
 Text Label 4500 3150 0    50   ~ 0
 VOL
-Text Label 4500 4150 0    50   ~ 0
-FREQ+
-Text Label 4500 4250 0    50   ~ 0
-FREQ-
 Wire Wire Line
 	4500 3950 4300 3950
 Wire Wire Line
@@ -469,8 +465,6 @@ Wire Wire Line
 	4500 4450 4300 4450
 Wire Wire Line
 	4500 4550 4300 4550
-Text GLabel 4500 4350 2    50   Input ~ 0
-MOTOR_DRV
 Wire Wire Line
 	4500 4350 4300 4350
 $Sheet
@@ -603,7 +597,7 @@ U 1 1 612BEFD5
 P 9200 2900
 F 0 "RV1" H 9130 2946 50  0000 R CNN
 F 1 "R_POT" H 9130 2855 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 9200 2900 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 9200 2900 50  0001 C CNN
 F 3 "~" H 9200 2900 50  0001 C CNN
 	1    9200 2900
 	-1   0    0    -1  
@@ -623,6 +617,11 @@ Wire Wire Line
 	9200 3050 9200 3200
 Wire Wire Line
 	9200 2550 9200 2750
-NoConn ~ 4500 4650
+NoConn ~ 4500 4350
 NoConn ~ 8000 2300
+Text GLabel 4500 4250 2    50   Input ~ 0
+MOTOR_DRV
+NoConn ~ 4500 4150
+NoConn ~ 4500 4650
+NoConn ~ 4300 2250
 $EndSCHEMATC
