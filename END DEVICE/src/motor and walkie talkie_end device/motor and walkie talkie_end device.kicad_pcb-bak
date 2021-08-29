@@ -1389,7 +1389,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 612AEFB2)
-    (at 39.611 191.008 180)
+    (at 39.71 192.96 180)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /615FCEB9/61BFC791)
@@ -3801,7 +3801,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 612AF641)
-    (at 41.339 189.23 180)
+    (at 41.675 190.82 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /615FCEB9/616ACFE4)
@@ -3837,7 +3837,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 612AF652)
-    (at 37.783 189.23 180)
+    (at 38.015 190.86 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /615FCEB9/616B55FD)
@@ -4089,7 +4089,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 612AF6C9)
-    (at 46.736 187.643 90)
+    (at 46.88 188.435 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /615FCEB9/61693584)
@@ -5113,7 +5113,7 @@
   )
 
   (module Remote_devices:ASPI-7318-6R8M-T (layer F.Cu) (tedit 612BEEBE) (tstamp 612E71D6)
-    (at 53.3 185.48 270)
+    (at 53.98 185.89 270)
     (descr "Power Inductor, Wuerth Elektronik, WE-PD2, SMD, Typ L, , https://katalog.we-online.com/pbs/datasheet/74477510.pdf")
     (tags "Choke Power Inductor WE-PD2 TypL Wuerth")
     (path /615FCEB9/616963BA)
