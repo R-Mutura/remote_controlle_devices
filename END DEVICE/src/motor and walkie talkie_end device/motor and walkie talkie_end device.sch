@@ -118,17 +118,6 @@ $EndComp
 Wire Wire Line
 	3700 5000 3700 4950
 $Comp
-L Device:Crystal Y1
-U 1 1 6133D1C8
-P 5200 2900
-F 0 "Y1" V 5154 3031 50  0000 L CNN
-F 1 "16MHz" V 5245 3031 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 5200 2900 50  0001 C CNN
-F 3 "~" H 5200 2900 50  0001 C CNN
-	1    5200 2900
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C3
 U 1 1 6133E225
 P 5950 2700
@@ -152,8 +141,6 @@ F 3 "~" H 5950 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 3050 5200 3150
-Wire Wire Line
-	5200 3150 5850 3150
 Wire Wire Line
 	6050 3150 6400 3150
 Wire Wire Line
@@ -624,4 +611,19 @@ MOTOR_DRV
 NoConn ~ 4500 4150
 NoConn ~ 4500 4650
 NoConn ~ 4300 2250
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 614C86C4
+P 5200 2900
+F 0 "Y1" V 5246 2656 50  0000 R CNN
+F 1 "16MHz" V 5155 2656 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 5200 2900 50  0001 C CNN
+F 3 "~" H 5200 2900 50  0001 C CNN
+	1    5200 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3150 5850 3150
+NoConn ~ 5000 2900
+NoConn ~ 5400 2900
 $EndSCHEMATC
