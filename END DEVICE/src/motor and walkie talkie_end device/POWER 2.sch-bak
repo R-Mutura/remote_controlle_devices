@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -13,40 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L remote_devices:TPS55340RTER IC4
-U 1 1 61DF917C
-P 4700 1400
-F 0 "IC4" H 4100 1550 50  0000 C CNN
-F 1 "TPS55340RTER" H 4100 1450 50  0000 C CNN
-F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm_ThermalVias" H 5750 2000 50  0001 L CNN
-F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS55340&&fileType=pdf" H 5750 1900 50  0001 L CNN
-	1    4700 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 61DFD622
-P 900 1000
-AR Path="/61DFD622" Ref="#PWR?"  Part="1" 
-AR Path="/615FCEB9/61DFD622" Ref="#PWR?"  Part="1" 
-AR Path="/61DE992E/61DFD622" Ref="#PWR?"  Part="1" 
-AR Path="/61DF39DA/61DFD622" Ref="#PWR0164"  Part="1" 
-F 0 "#PWR0164" H 900 850 50  0001 C CNN
-F 1 "+BATT" H 915 1173 50  0000 C CNN
-F 2 "" H 900 1000 50  0001 C CNN
-F 3 "" H 900 1000 50  0001 C CNN
-	1    900  1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 1200 4700 1100
 Wire Wire Line
 	4700 1100 3450 1100
 Wire Wire Line
 	3450 1100 3450 1550
-Wire Wire Line
-	3450 1550 3600 1550
 $Comp
 L Device:C_Small C40
 U 1 1 61DFD8B2
@@ -92,8 +62,6 @@ F 3 "~" H 2600 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 2600 3200 2600
-Wire Wire Line
 	2600 2600 2600 2750
 Wire Wire Line
 	2800 2600 2600 2600
@@ -117,13 +85,7 @@ Wire Wire Line
 	4700 4100 4700 4050
 Wire Wire Line
 	4700 4050 4600 4050
-Wire Wire Line
-	4600 4050 4600 3900
-Wire Wire Line
-	4700 3900 4700 4050
 Connection ~ 4700 4050
-Wire Wire Line
-	4800 3900 4800 4050
 Wire Wire Line
 	4800 4050 4700 4050
 $Comp
@@ -145,13 +107,8 @@ Wire Wire Line
 Wire Wire Line
 	2600 3500 3200 3500
 Wire Wire Line
-	3600 3350 3450 3350
-Wire Wire Line
 	3450 3350 3450 3500
 Connection ~ 3450 3500
-Wire Wire Line
-	3450 3500 3600 3500
-NoConn ~ 3600 2800
 $Comp
 L Device:C_Small C43
 U 1 1 61E05729
@@ -198,11 +155,7 @@ $EndComp
 Wire Wire Line
 	2150 2950 2150 3500
 Wire Wire Line
-	2150 2450 3600 2450
-Wire Wire Line
 	2150 2450 2150 2750
-Wire Wire Line
-	3600 2300 1700 2300
 Wire Wire Line
 	1700 2300 1700 2700
 Wire Wire Line
@@ -249,13 +202,7 @@ Wire Wire Line
 	4700 1100 5750 1100
 Connection ~ 4700 1100
 Wire Wire Line
-	5800 1600 5950 1600
-Wire Wire Line
 	5950 1600 5950 1750
-Wire Wire Line
-	5950 1900 5800 1900
-Wire Wire Line
-	5800 1750 5950 1750
 Connection ~ 5950 1750
 Wire Wire Line
 	5950 1750 5950 1900
@@ -265,65 +212,22 @@ Wire Wire Line
 	6400 1750 6400 1100
 Wire Wire Line
 	6400 1100 6250 1100
-$Comp
-L pspice:DIODE D11
-U 1 1 61E10F67
-P 7050 1100
-F 0 "D11" H 7050 1365 50  0000 C CNN
-F 1 "DIODE SCHOTTKY 200V 10A DPAK" H 7050 1274 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7050 1100 50  0001 C CNN
-F 3 "~" H 7050 1100 50  0001 C CNN
-F 4 "SBRD10200TR" H 7050 1100 50  0001 C CNN "Mfr No."
-F 5 "SMC Diode Solutions " H 7050 1100 50  0001 C CNN "Mfr"
-	1    7050 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 1100 6400 1100
 Connection ~ 6400 1100
-$Comp
-L Device:R_US R42
-U 1 1 61E11F71
-P 7700 1600
-F 0 "R42" H 7800 1650 50  0000 C CNN
-F 1 "60.4K" H 7850 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7740 1590 50  0001 C CNN
-F 3 "~" H 7700 1600 50  0001 C CNN
-	1    7700 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 1100 7700 1100
-Wire Wire Line
-	7700 1450 7700 1100
-Wire Wire Line
-	7700 1750 7700 2150
 $Comp
 L Device:R_US R43
 U 1 1 61E195F3
-P 7700 2550
-F 0 "R43" H 7800 2600 50  0000 C CNN
-F 1 "60.4K" H 7850 2500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7740 2540 50  0001 C CNN
-F 3 "~" H 7700 2550 50  0001 C CNN
-	1    7700 2550
+P 7500 2550
+F 0 "R43" H 7600 2600 50  0000 C CNN
+F 1 "60.4K" H 7650 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7540 2540 50  0001 C CNN
+F 3 "~" H 7500 2550 50  0001 C CNN
+	1    7500 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 2400 7700 2150
-Connection ~ 7700 2150
-Wire Wire Line
-	5800 2800 6000 2800
-Wire Wire Line
 	6000 2800 6000 2900
 Wire Wire Line
-	6000 2900 5800 2900
-Wire Wire Line
 	6000 2900 6000 3600
-Wire Wire Line
-	6000 3600 6900 3600
-Wire Wire Line
-	7700 2700 7700 3600
 Connection ~ 6000 2900
 $Comp
 L power:GND #PWR0168
@@ -336,16 +240,10 @@ F 3 "" H 6900 3750 50  0001 C CNN
 	1    6900 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6900 3750 6900 3600
-Connection ~ 6900 3600
-Wire Wire Line
-	6900 3600 7700 3600
 Text GLabel 7950 1100 2    39   Input Italic 0
 18V
 Text Notes 650  700  0    50   ~ 10
 11.1V to 18V boost circuit\n
-Connection ~ 7700 1100
 Wire Notes Line
 	600  550  8300 550 
 Text Notes 6900 4550 0    79   ~ 0
@@ -354,22 +252,7 @@ Wire Notes Line
 	6650 4250 6650 4550
 Wire Notes Line
 	7700 4250 7700 4550
-$Comp
-L Switch:SW_SPDT SW6
-U 1 1 61F64F0E
-P 1250 1200
-F 0 "SW6" H 1250 1485 50  0000 C CNN
-F 1 "SW_SPDT" H 1250 1394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1250 1200 50  0001 C CNN
-F 3 "~" H 1250 1200 50  0001 C CNN
-	1    1250 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	900  1200 1050 1200
-Wire Wire Line
-	900  1000 900  1200
-Text Notes 850  1500 0    39   Italic 0
+Text Notes 1000 1500 0    39   Italic 0
 ON / OFF SWITCH
 Connection ~ 2450 1100
 Wire Wire Line
@@ -393,9 +276,11 @@ L Device:CP1_Small C36
 U 1 1 61F88816
 P 1700 1450
 F 0 "C36" H 1750 1550 50  0000 L CNN
-F 1 "10uF_50V" H 1550 1300 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1700 1450 50  0001 C CNN
+F 1 "10uF_>30V" H 1550 1300 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 1700 1450 50  0001 C CNN
 F 3 "~" H 1700 1450 50  0001 C CNN
+F 4 "T491C106K035AT" H 1700 1450 50  0001 C CNN "Mfr No."
+F 5 "LCSC" H 1700 1450 50  0001 C CNN "Supplier"
 	1    1700 1450
 	1    0    0    -1  
 $EndComp
@@ -407,8 +292,6 @@ Wire Wire Line
 Wire Wire Line
 	1700 1350 1700 1100
 Connection ~ 1700 1100
-Wire Wire Line
-	1700 1100 2000 1100
 Wire Wire Line
 	1700 2000 1850 2000
 Wire Wire Line
@@ -496,8 +379,10 @@ U 1 1 61EF3AA0
 P 7500 5650
 F 0 "C49" H 7591 5696 50  0000 L CNN
 F 1 "1uF" H 7591 5605 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 7500 5650 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7500 5650 50  0001 C CNN
 F 3 "~" H 7500 5650 50  0001 C CNN
+F 4 "T498A105K016ATE6K5" H 7500 5650 50  0001 C CNN "Mfr No."
+F 5 "Digikey" H 7500 5650 50  0001 C CNN "Supplier"
 	1    7500 5650
 	1    0    0    -1  
 $EndComp
@@ -564,8 +449,10 @@ U 1 1 61ECDA71
 P 5200 5600
 F 0 "C46" H 5291 5646 50  0000 L CNN
 F 1 "10uF" H 5291 5555 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 5200 5600 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 5200 5600 50  0001 C CNN
 F 3 "~" H 5200 5600 50  0001 C CNN
+F 4 "T491C106K035AT" H 5200 5600 50  0001 C CNN "Mfr No."
+F 5 "Digikey" H 5200 5600 50  0001 C CNN "Suppier"
 	1    5200 5600
 	1    0    0    -1  
 $EndComp
@@ -585,8 +472,6 @@ F 3 "" H 4100 5400 50  0001 C CNN
 	1    4100 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 5550 1350 5550
 Connection ~ 1700 5550
 Wire Wire Line
 	1700 5700 1700 5550
@@ -645,7 +530,7 @@ U 1 1 61E99AAF
 P 3100 5700
 F 0 "C45" H 3191 5746 50  0000 L CNN
 F 1 "2.2uF" H 3191 5655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 3100 5700 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 3100 5700 50  0001 C CNN
 F 3 "~" H 3100 5700 50  0001 C CNN
 	1    3100 5700
 	1    0    0    -1  
@@ -667,8 +552,10 @@ U 1 1 61E98783
 P 1100 5800
 F 0 "C35" H 1191 5846 50  0000 L CNN
 F 1 "10uF" H 1191 5755 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x4.5" H 1100 5800 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 1100 5800 50  0001 C CNN
 F 3 "~" H 1100 5800 50  0001 C CNN
+F 4 "T491C106K035AT" H 1100 5800 50  0001 C CNN "Mfr No."
+F 5 "LCSC" H 1100 5800 50  0001 C CNN "Supplier"
 	1    1100 5800
 	1    0    0    -1  
 $EndComp
@@ -678,8 +565,6 @@ Wire Notes Line
 	8300 4650 600  4650
 Wire Notes Line
 	8300 550  8300 4650
-Wire Wire Line
-	5800 2150 7700 2150
 $Comp
 L Device:R_US R44
 U 1 1 62046E86
@@ -704,8 +589,6 @@ F 3 "~" H 10050 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 2300 10050 2250
-Wire Wire Line
-	10050 1900 10050 1800
 $Comp
 L power:GND #PWR0180
 U 1 1 6206820F
@@ -720,16 +603,8 @@ $EndComp
 Wire Wire Line
 	10050 2750 10050 2600
 Wire Wire Line
-	1800 950  1700 950 
-Wire Wire Line
-	1700 950  1700 1100
-Text GLabel 1100 5400 1    50   Input ~ 0
-BATT_IN
-Wire Wire Line
-	1100 5400 1100 5550
+	2000 950  2000 1100
 Connection ~ 1100 5550
-Text GLabel 1800 950  1    50   Input ~ 0
-BATT_IN
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 621BC337
@@ -741,18 +616,16 @@ F 3 "~" H 7700 900 50  0001 C CNN
 	1    7700 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7700 900  7700 1100
 NoConn ~ 1450 1100
 Wire Notes Line
-	8350 950  11100 950 
+	8350 600  11100 600 
 Wire Notes Line
-	11100 950  11100 4550
+	11100 600  11100 4650
 Wire Notes Line
-	11100 4550 8350 4550
+	11100 4650 8350 4650
 Wire Notes Line
-	8350 4550 8350 950 
-Text Notes 8550 1150 0    50   ~ 10
+	8350 4650 8350 600 
+Text Notes 8550 800  0    50   ~ 10
 BATTERY MONITORING CIRCUIT
 $Comp
 L remote_devices:L4931ABDT50 U9
@@ -771,13 +644,8 @@ Wire Wire Line
 	3000 5550 3100 5550
 Wire Wire Line
 	2700 5850 2700 6050
-Text GLabel 1350 5400 1    50   Input ~ 10
+Text GLabel 900  1200 3    50   Input ~ 10
 TO_SYS
-Wire Wire Line
-	1350 5400 1350 5550
-Connection ~ 1350 5550
-Wire Wire Line
-	1350 5550 1100 5550
 Text Notes 3250 6650 0    50   Italic 0
 Regulator can handle up to 20V input \nfrom TO_SYS & BATT_IN
 Wire Wire Line
@@ -791,8 +659,11 @@ U 1 1 622D1115
 P 4100 5750
 F 0 "C50" H 4191 5796 50  0000 L CNN
 F 1 "10uF" H 4191 5705 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 4100 5750 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 4100 5750 50  0001 C CNN
 F 3 "~" H 4100 5750 50  0001 C CNN
+F 4 "" H 4100 5750 50  0001 C CNN "Field4"
+F 5 "T491C106K035AT" H 4100 5750 50  0001 C CNN "Mfr No."
+F 6 "LCSC" H 4100 5750 50  0001 C CNN "Supplier"
 	1    4100 5750
 	1    0    0    -1  
 $EndComp
@@ -820,8 +691,6 @@ Wire Wire Line
 	3100 5550 3750 5550
 Wire Wire Line
 	3100 5900 3750 5900
-Text Notes 1350 7250 0    79   ~ 0
-NB// All components can work when power is pluggedin except the\n         DC-Motor. The motor only works when the battery is connected
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 62357D8E
@@ -837,15 +706,11 @@ F 3 "~" H 1700 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 5300 1700 5550
-Text GLabel 9600 2250 0    50   Input ~ 0
-BATT_VOLT
 Wire Wire Line
 	9600 2250 10050 2250
 Connection ~ 10050 2250
 Wire Wire Line
 	10050 2250 10050 2200
-Text GLabel 10050 1800 1    50   Input ~ 0
-BATT_IN
 $Comp
 L Regulator_Linear:LM1117-3.3 U6
 U 1 1 6268E5E7
@@ -860,102 +725,252 @@ $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 6290EE9D
-P 8100 1500
-F 0 "#PWR0111" H 8100 1250 50  0001 C CNN
-F 1 "GND" H 8105 1327 50  0000 C CNN
-F 2 "" H 8100 1500 50  0001 C CNN
-F 3 "" H 8100 1500 50  0001 C CNN
-	1    8100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 1400 7900 1450
-Wire Wire Line
-	7900 1450 8100 1450
-Wire Wire Line
-	8100 1450 8100 1500
-$Comp
-L Device:C_Small C5
-U 1 1 62905119
-P 7900 1300
-F 0 "C5" H 7992 1346 50  0000 L CNN
-F 1 "10uF" H 7992 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 1300 50  0001 C CNN
-F 3 "~" H 7900 1300 50  0001 C CNN
-	1    7900 1300
+P 7900 1850
+F 0 "#PWR0111" H 7900 1600 50  0001 C CNN
+F 1 "GND" H 7905 1677 50  0000 C CNN
+F 2 "" H 7900 1850 50  0001 C CNN
+F 3 "" H 7900 1850 50  0001 C CNN
+	1    7900 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7950 1100 7900 1100
-Wire Wire Line
-	7900 1200 7900 1100
 Connection ~ 7900 1100
-Wire Wire Line
-	7900 1100 7700 1100
 $Comp
 L Device:R_US R?
 U 1 1 61329130
-P 5650 6300
+P 9300 5400
 AR Path="/615FCEB9/61329130" Ref="R?"  Part="1" 
 AR Path="/61DE992E/61329130" Ref="R?"  Part="1" 
 AR Path="/61DF39DA/61329130" Ref="R1"  Part="1" 
-F 0 "R1" V 5445 6300 50  0000 C CNN
-F 1 "10k" V 5536 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5690 6290 50  0001 C CNN
-F 3 "~" H 5650 6300 50  0001 C CNN
-	1    5650 6300
+F 0 "R1" V 9095 5400 50  0000 C CNN
+F 1 "10k" V 9186 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9340 5390 50  0001 C CNN
+F 3 "~" H 9300 5400 50  0001 C CNN
+	1    9300 5400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 61329138
-P 6050 6300
+P 9700 5400
 AR Path="/615FCEB9/61329138" Ref="D?"  Part="1" 
 AR Path="/61DE992E/61329138" Ref="D?"  Part="1" 
 AR Path="/61DF39DA/61329138" Ref="D3"  Part="1" 
-F 0 "D3" H 6043 6045 50  0000 C CNN
-F 1 "LED" H 6043 6136 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 6050 6300 50  0001 C CNN
-F 3 "~" H 6050 6300 50  0001 C CNN
-	1    6050 6300
+F 0 "D3" H 9693 5145 50  0000 C CNN
+F 1 "LED" H 9693 5236 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9700 5400 50  0001 C CNN
+F 3 "~" H 9700 5400 50  0001 C CNN
+	1    9700 5400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 6300 5800 6300
-Text Notes 6700 6300 0    39   Italic 0
+	9550 5400 9450 5400
+Text Notes 10350 5400 0    39   Italic 0
 SYSTEM_ON
 $Comp
 L power:GND #PWR04
 U 1 1 61338120
-P 6600 6300
-F 0 "#PWR04" H 6600 6050 50  0001 C CNN
-F 1 "GND" H 6605 6127 50  0000 C CNN
-F 2 "" H 6600 6300 50  0001 C CNN
-F 3 "" H 6600 6300 50  0001 C CNN
-	1    6600 6300
+P 10250 5400
+F 0 "#PWR04" H 10250 5150 50  0001 C CNN
+F 1 "GND" H 10255 5227 50  0000 C CNN
+F 2 "" H 10250 5400 50  0001 C CNN
+F 3 "" H 10250 5400 50  0001 C CNN
+	1    10250 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 6300 6600 6300
+	9850 5400 10250 5400
 $Comp
 L power:+3.3V #PWR03
 U 1 1 61347035
-P 5300 6150
-F 0 "#PWR03" H 5300 6000 50  0001 C CNN
-F 1 "+3.3V" H 5315 6323 50  0000 C CNN
-F 2 "" H 5300 6150 50  0001 C CNN
-F 3 "" H 5300 6150 50  0001 C CNN
-	1    5300 6150
+P 8950 5250
+F 0 "#PWR03" H 8950 5100 50  0001 C CNN
+F 1 "+3.3V" H 8965 5423 50  0000 C CNN
+F 2 "" H 8950 5250 50  0001 C CNN
+F 3 "" H 8950 5250 50  0001 C CNN
+	1    8950 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 6150 5300 6300
+	8950 5250 8950 5400
 Wire Wire Line
-	5300 6300 5500 6300
+	8950 5400 9150 5400
 Wire Wire Line
 	1700 1100 1550 1100
 Wire Wire Line
 	1550 1100 1550 1300
 Wire Wire Line
 	1550 1300 1450 1300
+Text Label 2000 950  0    50   Italic 0
+BATT_IN
+Text Label 1100 5250 2    50   Italic 0
+BATT_IN
+Wire Wire Line
+	1100 5250 1100 5550
+Wire Notes Line
+	8350 4750 8350 6500
+Wire Notes Line
+	8350 6500 11150 6500
+Wire Notes Line
+	11150 6500 11150 4750
+Wire Notes Line
+	11150 4750 8350 4750
+Text Notes 8450 4900 0    50   ~ 10
+POWER_ON LED
+Wire Wire Line
+	3600 2300 1700 2300
+Wire Wire Line
+	3600 2600 3200 2600
+Wire Wire Line
+	3600 3350 3450 3350
+NoConn ~ 3600 2800
+Wire Wire Line
+	2150 2450 3600 2450
+Wire Wire Line
+	3450 1550 3600 1550
+Wire Wire Line
+	4700 1200 4700 1100
+Wire Wire Line
+	3450 3500 3600 3500
+Wire Wire Line
+	5950 1900 5800 1900
+Wire Wire Line
+	5800 1750 5950 1750
+Wire Wire Line
+	5800 2800 6000 2800
+Wire Wire Line
+	4800 3900 4800 4050
+Wire Wire Line
+	4700 3900 4700 4050
+Wire Wire Line
+	4600 4050 4600 3900
+Wire Wire Line
+	6000 2900 5800 2900
+Wire Wire Line
+	5800 1600 5950 1600
+Wire Wire Line
+	6850 1100 6400 1100
+Wire Wire Line
+	7500 2400 7500 2150
+$Comp
+L remote_devices:TPS55340RTER IC4
+U 1 1 61DF917C
+P 4700 1400
+F 0 "IC4" H 4100 1550 50  0000 C CNN
+F 1 "TPS55340RTER" H 4100 1450 50  0000 C CNN
+F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm_ThermalVias" H 5750 2000 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS55340&&fileType=pdf" H 5750 1900 50  0001 L CNN
+	1    4700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2700 7500 3600
+Connection ~ 6900 3600
+Wire Wire Line
+	6900 3750 6900 3600
+Wire Wire Line
+	6000 3600 6900 3600
+Wire Wire Line
+	7900 1100 7700 1100
+Wire Wire Line
+	7700 900  7700 1100
+Connection ~ 7700 1100
+$Comp
+L pspice:DIODE D11
+U 1 1 61E10F67
+P 7050 1100
+F 0 "D11" H 7050 1365 50  0000 C CNN
+F 1 "DIODE SCHOTTKY 200V 10A DPAK" H 7050 1274 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7050 1100 50  0001 C CNN
+F 3 "~" H 7050 1100 50  0001 C CNN
+F 4 "SBRD10200TR" H 7050 1100 50  0001 C CNN "Mfr No."
+F 5 "SMC Diode Solutions " H 7050 1100 50  0001 C CNN "Mfr"
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2150 7500 2150
+Wire Wire Line
+	6900 3600 7500 3600
+Wire Wire Line
+	7250 1100 7500 1100
+Wire Wire Line
+	7900 1500 7900 1100
+Wire Wire Line
+	7500 1450 7500 1100
+Wire Wire Line
+	7500 1750 7500 2150
+$Comp
+L Device:C_Small C5
+U 1 1 62905119
+P 7900 1600
+F 0 "C5" H 7992 1646 50  0000 L CNN
+F 1 "10uF" H 7992 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 1600 50  0001 C CNN
+F 3 "~" H 7900 1600 50  0001 C CNN
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R42
+U 1 1 61E11F71
+P 7500 1600
+F 0 "R42" H 7600 1750 50  0000 C CNN
+F 1 "60.4K" H 7650 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7540 1590 50  0001 C CNN
+F 3 "~" H 7500 1600 50  0001 C CNN
+	1    7500 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 1100
+Wire Wire Line
+	7500 1100 7700 1100
+Connection ~ 7500 2150
+Connection ~ 7500 3600
+Wire Wire Line
+	7500 3600 7700 3600
+Wire Wire Line
+	7900 1700 7900 1850
+Text HLabel 9600 2250 0    39   Input ~ 8
+BATT_VOLTAGE
+Text Label 10050 1650 1    50   Italic 0
+BATT_IN
+Wire Wire Line
+	10050 1650 10050 1900
+Wire Wire Line
+	1100 5550 1700 5550
+Wire Wire Line
+	750  950  750  1150
+$Comp
+L OLIMEX_Power:+BATT #PWR06
+U 1 1 614952E2
+P 750 950
+F 0 "#PWR06" H 750 800 50  0001 C CNN
+F 1 "+BATT" H 765 1123 50  0000 C CNN
+F 2 "" H 750 950 60  0000 C CNN
+F 3 "" H 750 950 60  0000 C CNN
+	1    750  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW6
+U 1 1 61F64F0E
+P 1250 1200
+F 0 "SW6" H 1250 1485 50  0000 C CNN
+F 1 "SW_SPDT" H 1250 1394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1250 1200 50  0001 C CNN
+F 3 "~" H 1250 1200 50  0001 C CNN
+	1    1250 1200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 750  1150
+Wire Wire Line
+	1700 1100 2000 1100
+Text Notes 1850 700  0    39   ~ 0
+Correction. the BATT+ connection should be remves and the TO-SYS be used as imput to the system only!
+Text Notes 1850 800  0    39   ~ 0
+the previous design disconnects the battery only when its switch off but does not disconnect the system when powered via an external source.
+Wire Wire Line
+	900  1200 1050 1200
 $EndSCHEMATC

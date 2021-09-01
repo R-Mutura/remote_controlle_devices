@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -30,12 +30,8 @@ F 3 "" H 2850 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 1550 2850 1700
-Text GLabel 2050 2350 0    50   Input ~ 0
-PTT
 Wire Wire Line
 	2300 2350 2050 2350
-Text GLabel 2050 2550 0    50   Input ~ 0
-PD
 Wire Wire Line
 	2300 2550 2050 2550
 $Comp
@@ -97,12 +93,8 @@ Text Notes 1350 2200 0    39   ~ 0
 9600BAUD,\nN,8,1.
 Wire Wire Line
 	2050 2200 2300 2200
-Text GLabel 2050 2200 0    50   Input ~ 0
-MCURX
 Wire Wire Line
 	2050 2100 2300 2100
-Text GLabel 2050 2100 0    50   Input ~ 0
-MCU_TX
 NoConn ~ 3350 2300
 NoConn ~ 2300 2450
 Wire Wire Line
@@ -115,30 +107,16 @@ Wire Wire Line
 $Comp
 L Device:C C10
 U 1 1 61336022
-P 6550 1200
-F 0 "C10" H 6665 1246 50  0000 L CNN
-F 1 "10uF" H 6665 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 1050 50  0001 C CNN
-F 3 "~" H 6550 1200 50  0001 C CNN
-	1    6550 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 61336028
-P 7250 1250
-F 0 "C11" H 7365 1296 50  0000 L CNN
-F 1 "10nF" H 7365 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7288 1100 50  0001 C CNN
-F 3 "~" H 7250 1250 50  0001 C CNN
-	1    7250 1250
+P 6900 1200
+F 0 "C10" H 7015 1246 50  0000 L CNN
+F 1 "10uF" H 7015 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 1050 50  0001 C CNN
+F 3 "~" H 6900 1200 50  0001 C CNN
+	1    6900 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1050 6550 1000
-Wire Wire Line
-	6550 1000 6900 1000
-Connection ~ 6900 1000
+	6900 1050 6900 1000
 $Comp
 L power:+3.3V #PWR0126
 U 1 1 61336031
@@ -161,19 +139,8 @@ F 3 "" H 6900 1450 50  0001 C CNN
 	1    6900 1450
 	1    0    0    -1  
 $EndComp
-Connection ~ 6900 1450
 Wire Wire Line
-	6900 1450 7250 1450
-Wire Wire Line
-	6550 1450 6900 1450
-Wire Wire Line
-	7250 1000 7250 1100
-Wire Wire Line
-	7250 1400 7250 1450
-Wire Wire Line
-	6900 1000 7250 1000
-Wire Wire Line
-	6550 1350 6550 1450
+	6900 1350 6900 1450
 Wire Wire Line
 	5600 2200 5850 2200
 Wire Wire Line
@@ -182,28 +149,6 @@ Wire Wire Line
 	6650 2200 6950 2200
 Text Label 6950 2050 0    50   ~ 0
 AUDIO_SIGNAL
-$Comp
-L power:GND #PWR0128
-U 1 1 6133604C
-P 5100 3200
-F 0 "#PWR0128" H 5100 2950 50  0001 C CNN
-F 1 "GND" H 5105 3027 50  0000 C CNN
-F 2 "" H 5100 3200 50  0001 C CNN
-F 3 "" H 5100 3200 50  0001 C CNN
-	1    5100 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0129
-U 1 1 61336053
-P 4900 1350
-F 0 "#PWR0129" H 4900 1200 50  0001 C CNN
-F 1 "+3.3V" H 4915 1523 50  0000 C CNN
-F 2 "" H 4900 1350 50  0001 C CNN
-F 3 "" H 4900 1350 50  0001 C CNN
-	1    4900 1350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Potentiometer_Digital:MCP41010 U5
 U 1 1 61336059
@@ -394,9 +339,11 @@ L Device:CP1_Small C14
 U 1 1 613360C6
 P 9950 1550
 F 0 "C14" H 10041 1596 50  0000 L CNN
-F 1 "1.0uF" H 10041 1505 50  0000 L CNN
+F 1 "1.0uF_TCMIA106AT" H 9600 1450 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R" H 9950 1550 50  0001 C CNN
 F 3 "~" H 9950 1550 50  0001 C CNN
+F 4 "TCMIA106AT" H 9950 1550 50  0001 C CNN "Nfr No."
+F 5 "DIgiKey" H 9950 1550 50  0001 C CNN "Supplier"
 	1    9950 1550
 	1    0    0    -1  
 $EndComp
@@ -479,23 +426,10 @@ Wire Wire Line
 	8450 2150 8550 2150
 Wire Wire Line
 	8450 2150 8150 2150
-Text GLabel 8300 1850 1    50   Input ~ 0
-LM_SD
 Wire Wire Line
 	8150 2150 8150 1650
 Wire Wire Line
 	8150 1650 8100 1650
-$Comp
-L Device:CP1_Small C15
-U 1 1 613360FF
-P 10400 1550
-F 0 "C15" H 10491 1596 50  0000 L CNN
-F 1 "10nF" H 10491 1505 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R" H 10400 1550 50  0001 C CNN
-F 3 "~" H 10400 1550 50  0001 C CNN
-	1    10400 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10400 1650 10400 1750
 Wire Wire Line
@@ -526,14 +460,6 @@ Wire Notes Line
 	4750 550  11100 550 
 Wire Wire Line
 	8550 2050 8300 2050
-Wire Wire Line
-	8300 2050 8300 1850
-Text GLabel 3950 6150 0    50   Input ~ 0
-MOSI
-Text GLabel 3950 6050 0    50   Input ~ 0
-MISO
-Text GLabel 3950 5950 0    50   Input ~ 0
-SCK
 $Comp
 L power:+3.3V #PWR0136
 U 1 1 614532C2
@@ -630,14 +556,6 @@ Wire Notes Line
 	10100 2500 10100 2700
 Text Notes 6600 3250 0    50   ~ 0
 Digital Potentiometer uses \nSPI protocol to change resistance\nused for setting the volume of the speaker
-Text GLabel 3950 5850 0    50   Input ~ 0
-lora_SS
-Text GLabel 5600 2300 0    50   Input ~ 0
-MOSI
-Text GLabel 5600 2200 0    50   Input ~ 0
-SCK
-Text GLabel 5600 2400 0    50   Input ~ 0
-pot_CS
 Wire Wire Line
 	5600 2400 5850 2400
 $Comp
@@ -739,34 +657,6 @@ Text Label 3900 7000 0    50   ~ 0
 Lora_GND
 Text Label 4650 6800 3    50   ~ 0
 Lora_GND
-$Comp
-L Device:Jumper JP3
-U 1 1 624157EB
-P 5400 1350
-F 0 "JP3" H 5400 1614 50  0000 C CNN
-F 1 "Jumper" H 5400 1523 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5400 1350 50  0001 C CNN
-F 3 "~" H 5400 1350 50  0001 C CNN
-	1    5400 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 1350 5100 1350
-$Comp
-L Device:Jumper JP4
-U 1 1 6241CC63
-P 5550 3100
-F 0 "JP4" H 5550 3364 50  0000 C CNN
-F 1 "Jumper" H 5550 3273 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5550 3100 50  0001 C CNN
-F 3 "~" H 5550 3100 50  0001 C CNN
-	1    5550 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 3100 5100 3100
-Wire Wire Line
-	5100 3100 5100 3200
 Wire Wire Line
 	5850 3100 6250 3100
 Wire Wire Line
@@ -836,4 +726,47 @@ Wire Wire Line
 	3700 1500 3650 1500
 Wire Wire Line
 	3650 1350 3650 1500
+Text HLabel 2050 2100 0    39   Input ~ 0
+MCU_TX
+Text HLabel 2050 2200 0    39   Input ~ 0
+MCU_RX
+Text HLabel 2050 2350 0    39   Input ~ 0
+PTT
+Text HLabel 2050 2550 0    39   Input ~ 0
+PD
+Text HLabel 3950 5850 0    39   Input ~ 0
+LORA_SS
+Text HLabel 3950 5950 0    39   Input ~ 0
+SCK
+Text HLabel 3950 6050 0    39   Input ~ 0
+MISO
+Text HLabel 3950 6150 0    39   Input ~ 0
+MOSI
+Text HLabel 5600 2200 0    39   Input ~ 0
+SCK
+Text HLabel 5600 2300 0    39   Input ~ 0
+MISO
+Text HLabel 5600 2400 0    39   Input ~ 0
+POT_CS
+Text HLabel 8300 1750 1    39   Input ~ 0
+LM_SD
+Wire Wire Line
+	8300 1750 8300 2050
+Text Label 5850 3100 2    50   ~ 0
+Lora_GND
+Text Label 5700 1350 2    50   ~ 0
+Lora_3.3V
+$Comp
+L Device:CP1_Small C15
+U 1 1 615CD3DF
+P 10400 1550
+F 0 "C15" H 10491 1596 50  0000 L CNN
+F 1 "1.0uF_TCMIA106AT" H 10200 1750 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R" H 10400 1550 50  0001 C CNN
+F 3 "~" H 10400 1550 50  0001 C CNN
+F 4 "TCMIA106AT" H 10400 1550 50  0001 C CNN "Nfr No."
+F 5 "DIgiKey" H 10400 1550 50  0001 C CNN "Supplier"
+	1    10400 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
